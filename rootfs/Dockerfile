@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ARG BASE_IMAGE
+#ARG BASE_IMAGE
 
-FROM ${BASE_IMAGE}
+FROM europe-north1-docker.pkg.dev/itk8s-208609/sre/ingress-nginx@sha256:da529e8d11e9d37a60e5dede0aa5e531441225ff98b4edb2d8ddf91408076517
 
 ARG TARGETARCH
 ARG VERSION

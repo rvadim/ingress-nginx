@@ -49,9 +49,9 @@ ifeq ($(ARCH),)
     $(error mandatory variable ARCH is empty, either set it when calling the command or make sure 'go env GOARCH' works)
 endif
 
-REGISTRY ?= gcr.io/k8s-staging-ingress-nginx
+REGISTRY ?= europe-north1-docker.pkg.dev/itk8s-208609/sre
 
-BASE_IMAGE ?= k8s.gcr.io/ingress-nginx/nginx:v20210809-g98288bc3c@sha256:f9363669cf26514c9548c1fe4f8f4e2f58dfb76616bcd638a0ff7f0ec3457c17
+BASE_IMAGE ?= europe-north1-docker.pkg.dev/itk8s-208609/sre/ingress-nginx:v0.49.0-patched@sha256:da529e8d11e9d37a60e5dede0aa5e531441225ff98b4edb2d8ddf91408076517 
 
 GOARCH=$(ARCH)
 
